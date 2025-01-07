@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.Login-main{
+    margin-left: 0;
+    padding: 0;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.Login-container{
+    height: 80%;
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.auth-Login-input-container{
+    width: 90%;
+    height: 6vh;
+    border-radius: 1.3vh;
+    border: 1.5px solid #D0D0D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.auth-Login-input{
+    width: 74%;
+    height: 90%;
+    border: none;
+    outline: none;
+}
+.auth-Login-image-input1{
+    width: 13%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth-Login-image-input1 svg{
+    width: 50%;
+    height: 50%;
+}
+.auth-Login-image-input2{
+    width: 13%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.auth-Login-image-input2 svg{
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+.Login-main h2{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 4vh;
+}
+
+.Login-container>h4{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #828282;
+    font-size: 2.2vh;
+    margin: 1rem 0 0 0;
+}
+
+.Login-container button{
+    height: 6vh;
+    width: 88%;
+    border-radius: 3vh;
+    /* border: none; */
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2vh;
+    /* color: #828282; */
+    margin-top: 1rem;
+}
+.auth-Login-btn{
+    background-color: #17A2B8;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+    border: none;
+}
+.auth-Login-btn:hover {
+    background-color: rgb(13, 111, 126);
+}
+.auth-RegInLogin-btn{
+    border: 1px solid #17A2B8;
+    color: #17A2B8;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.auth-RegInLogin-btn:hover{
+    background-color: whitesmoke;
+    color: black;
+}

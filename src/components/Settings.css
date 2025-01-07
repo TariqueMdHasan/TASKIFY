@@ -1,0 +1,47 @@
+.Settings{
+    height: 100vh;
+    width: 85vw;
+    background-color: goldenrod;
+}
+.settings-input-container{
+    width: 35%;
+    height: 6vh;
+    border-radius: 1.3vh;
+    border: 1.5px solid #D0D0D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.settings-input{
+    width: 74%;
+    height: 90%;
+    border: none;
+    outline: none;
+}
+.settings-image-input1{
+    width: 13%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.settings-image-input1 svg{
+    width: 50%;
+    height: 50%;
+}
+.settings-image-input2{
+    width: 13%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.settings-image-input2 svg{
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}

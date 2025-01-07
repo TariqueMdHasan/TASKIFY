@@ -1,0 +1,19 @@
+.board{
+    height: 100vh;
+    width: 85vw;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.board-upper{
+    height: 10vh;
+    width: 100%;
+    background-color: aqua;
+}
+.board-lower{
+    height: 90vh;
+    width: 100%;
+    background-color: beige;
+}

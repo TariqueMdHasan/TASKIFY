@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 5vh;
+    font-weight: 600;
+    margin-left: 2vw;
+}
+.navbar h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2.2vh;
+    color: #707070;
+    margin-right: 2vw;
+}

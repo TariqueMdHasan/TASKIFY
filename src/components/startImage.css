@@ -1,0 +1,57 @@
+.start-Left {
+    margin: 0;
+    padding: 0;
+    width: 60vw;
+    background-color: #17A2B8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.start-images {
+    max-height: 30vh;
+    max-width: 30vh;
+    background-color: #317F8B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Art-image {
+    max-width: 50vh;
+    margin-top: 8vh;
+    padding: 0px;
+    margin-right: 2vh;
+}
+
+.start-Left-Text {
+    max-height: 10vh;
+    max-width: 46vh;
+  
+    margin-top: 11vh;
+}
+
+.start-Left-Text>h2 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.5vh;
+    margin: 0;
+    color: #fff;
+}
+.start-Left-Text>h4 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2vh;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    margin-top: 1.5vh;
+}
