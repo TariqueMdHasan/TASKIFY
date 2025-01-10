@@ -198,3 +198,12 @@
     top: -14vh;
     left: 75%;
 }
+.developer{
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+}

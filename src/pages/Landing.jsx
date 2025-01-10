@@ -191,6 +191,7 @@ function Landing() {
             <div ref={line4Ref} className="lp-blank5"></div>
           </div>
         </div>
+        <p className='developer'>Developed by Tarique</p>
     </div>
   )
 }
