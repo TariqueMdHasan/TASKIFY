@@ -9,7 +9,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    /* background-color: white;                                    for light theme */
+    background-color: rgb(16, 15, 15);
+    color: white;
+    /* color: black;                                                  for light theme */
+    border-left: 1px solid rgb(65, 65, 65);
 }
 .Login-container{
     height: 80%;
@@ -35,6 +39,10 @@
     height: 90%;
     border: none;
     outline: none;
+    background: #141414;
+    /* background: transparent;                    for light theme */
+    color: white;
+    /* color: black;                            for light theme */
 }
 .auth-Login-image-input1{
     width: 13%;
@@ -91,21 +99,27 @@
     margin-top: 1rem;
 }
 .auth-Login-btn{
-    background-color: #17A2B8;
+    /* background-color: #17A2B8;                for light theme */
+    background-color: #007a06;
     color: #fff;
     transition: all 0.3s ease 0s;
     border: none;
 }
 .auth-Login-btn:hover {
-    background-color: rgb(13, 111, 126);
+    /* background-color: rgb(13, 111, 126);                                   for light mode */
+    background-color: rgb(0 48 2);
 }
 .auth-RegInLogin-btn{
-    border: 1px solid #17A2B8;
-    color: #17A2B8;
-    background-color: #fff;
+    /* border: 1px solid #17A2B8;                                for light theme */
+    border: 1px solid rgb(156, 156, 156);
+    /* color: #17A2B8;                                         for light theme */
+    color: white;
+    /* background-color: #fff;                                  for light theme */
+    background-color: black;
     transition: all 0.3s ease 0s;
 }
 .auth-RegInLogin-btn:hover{
-    background-color: whitesmoke;
-    color: black;
+    /* background-color: whitesmoke;                               for light theme */
+    background-color: #141414;
+    /* color: black;                                            for light theme */
 }

@@ -12,11 +12,14 @@
     font-size: 5vh;
     font-weight: 600;
     margin-left: 2vw;
+    color: white;
+    /* color: black;                       for light theme */
 }
 .navbar h3{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 2.2vh;
-    color: #707070;
+    /* color: #707070;                                for light theme*/
+    color: rgb(230, 230, 230);
     margin-right: 2vw;
 }

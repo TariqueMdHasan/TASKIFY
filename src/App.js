@@ -11,6 +11,8 @@ import Board from './components/Board';
 import Analytics from './components/Analytics';
 import Settings from './components/Settings';
 
+// import BoardMain from './components/BoardMain';
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
           <Route path="Board" element={<Board />} />
           <Route path="Analytics" element={<Analytics />} />
           <Route path="Settings" element={<Settings />} />
+          {/* <Route path='Board' element={<BoardMain />} /> */}
         </Route>
       </Routes>
     </Router>

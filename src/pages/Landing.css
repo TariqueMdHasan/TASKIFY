@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.Landing-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    /* background-color: white;           for light theme */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.landing-con1, .landing-con2{
+    width: 45%;
+    height: 80%;
+    border-radius: 20px;
+    position: relative;
+    color: white;
+}
+.lp-left-container{
+    width: 90%;
+    height: 50%;
+    border: 4px solid #007a06;
+    border-radius: 15px;
+    position: absolute;
+    right: 3%;
+    bottom: 11%;
+    background-color: rgb(20 20 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* rotate: -20deg; */
+    transition: all 0.5s ease-in-out;
+}
+.lp-left-container:hover{
+    rotate: 20deg;
+    box-shadow: 0 4px 100px #d0f8cd;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);              for light theme */
+    backdrop-filter: blur(5px);
+}
+.lp-blank1{
+    height: 15%;
+    width: 47px;
+    background-color: transparent;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lp-blank2{
+    height: 15%;
+    width: 60%;
+    background-color: rgb(84, 84, 84);
+    margin-left: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.lp-blank3{
+    height: 15%;
+    width: 90%;
+    background-color: rgb(84, 84, 84);
+    margin-left: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.lp-blank4{
+    height: 15%;
+    width: 30%;
+    background-color: rgb(84, 84, 84);
+    margin-left: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.lp-blank5{
+    height: 15%;
+    width: 50%;
+    background-color: rgb(84, 84, 84);
+    margin-left: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.lp-blank5:hover, .lp-blank3:hover{
+    transform: scale(1.1);
+    rotate: 20deg;
+    z-index: 999;
+} 
+.lp-blank4:hover, .lp-blank2:hover{
+    transform: scale(1.1);
+    rotate: -20deg;
+    z-index: 999;
+} 
+.lp-three-dot1{
+    height: 12px;
+    width: 12px;
+    background-color: red;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+/* .lp-three-dot1:hover, .lp-three-dot2:hover, .lp-three-dot3:hover{
+    transform: translateY(-150px);
+    transition: all 0.5s ease-in-out;
+} */
+.lp-three-dot2{
+    height: 12px;
+    width: 12px;
+    background-color: yellow;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.lp-three-dot3{
+    height: 12px;
+    width: 12px;
+    background-color: green;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.ld-left1 h2{
+    font-family: "Delius Unicase", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0px;
+}
+.ld-left2 h1{
+    font-family: "Poppins", serif;
+    font-weight: 650;
+    font-style: normal;
+    font-size: 3rem;
+    margin: 0px;
+}
+.ld-left1{
+    position: absolute;
+    top: -5vh;
+}
+.ld-left2{
+    /* top: 25%; */
+}
+.ld-h1-w{
+    color: white;
+    top: 30%;
+}
+.ld-h1-b{
+    color: rgb(5, 122, 255);
+}
+.landing-con1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.ld-left3 h3{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.ld-left4{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ld-reg-btn, .ld-log-btn{
+    padding: 0.6rem 5rem;
+    border: none;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.ld-log-btn:hover{
+    background: rgb(0, 0, 113);
+    /* transform: scale(1.1); */
+}
+.ld-reg-btn:hover{
+    background: rgb(0, 0, 113);
+}
+.pen{
+    width: 6rem;
+    position: relative;
+    top: -14vh;
+    left: 75%;
+}

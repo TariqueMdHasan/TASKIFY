@@ -3,17 +3,19 @@
 .sidebar{
     height: 100vh;
     width: 15vw;
-    /* background-color: greenyellow; */
+    background-color: black;            
+    /* background-color: white;                  for light theme*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
+    border-right: 1px solid #EDF5FE;
+    color: white;                  
+    /* color: black;                            for light theme */
 }
 .sidebar-div1{
     height: 10vh;
     width: 100%;
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +30,6 @@
 .sidebar-div2{
     height: 90vh;
     width: 100%;
-    /* background-color: rgb(101, 57, 177); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -49,7 +50,6 @@
     height:4rem;
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 0.7rem;
     cursor: pointer;
@@ -74,20 +74,25 @@
 .sideup{
     width: 100%;
     height: 3rem;
-    /* border: 1px solid gray; */
     transition: all 0.3s ease;
     cursor: pointer;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 0.7rem;
 }
 .sideup.changed {
     background: #4391ED1A;
-    color: black;
     font-weight: 500;
+
 }
 .sideup.changed h3, .sideup.changed svg {
-    color: black;
+    color: white;                          
+    /* color: black;                                     for light theme */
     font-weight: 500;
+}
+.sideup h3, .sidebar-lower-div h3{
+    transition: all 0.3s ease-in-out;
+}
+.sideup h3:hover, .sidebar-lower-div h3:hover{
+    margin-left: 5px;
 }

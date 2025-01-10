@@ -1,7 +1,8 @@
 .board{
     height: 100vh;
     width: 85vw;
-    /* background-color: red; */
+    background-color: #0b0b0bed;
+    /* background-color: white;                    for light theme*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,10 +11,12 @@
 .board-upper{
     height: 10vh;
     width: 100%;
-    background-color: aqua;
 }
 .board-lower{
     height: 90vh;
     width: 100%;
-    background-color: beige;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: scroll;
 }

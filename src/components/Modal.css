@@ -1,0 +1,333 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-overlay {
+  z-index: 9998;
+}
+.title-name{
+  
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  font-size: 3vh;
+}
+.input-title{
+  outline: none;
+    padding-left: 1vw;
+    font-size: 2vh;
+    color: #9B959F;
+  
+}
+
+.input-title::placeholder{
+  font-family: "Inter", sans-serif;
+  font-size: 2vh;
+}
+.Checklist{
+  font-family: "Inter", sans-serif;
+  margin-left: 1vw;
+  font-weight: 500;
+}
+.last-btns{
+  width: 37vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1vw;
+}
+.modal-date-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.modal-btns{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-btns>button{
+  padding: 1vh;
+  width: 49%;
+  margin-top: 2vh;
+  height: 5vh;
+  border-radius: 1.5vh;
+  font-size: 2.5vh;
+  cursor: pointer;
+}
+.todo-container{
+  width: 38vw;
+  margin-left: 1vw;
+  height: 34vh;
+}
+.add-btn{
+  height: 5vh;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 2vh;
+  color: #767575;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-1{
+  border: 1px solid #CF3636;
+  color: #CF3636;
+  /* background-color: #fff;                         for light theme */
+  background-color: black;
+  transition: all 0.3s ease 0s;
+}
+.btn-1:hover{
+  background-color: #1c1b1b;
+}
+.btn-2{
+  border: none;
+  background-color: #007a06;
+  /* background-color: #17A2B8;                                for light theme */
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+.btn-2:hover{
+  background-color: rgb(0 48 2);
+  /* background-color: rgb(13, 111, 126);                              for light theme */
+}
+.modal-priority, .modal-priorityOne{
+  margin-left: 0.7rem;
+  height: 2rem;
+  background: black;
+  /* background-color: white;                      for light theme */
+  color: white;
+  /* color: black;                                 cor light theme */
+  border-radius: 5px
+}
+.modal-priorityOne{
+  margin-right: 1rem;
+}
+.priority-parent{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+.modal-content {
+  /* background-color: #fff;                    for light theme */
+  background-color: black;
+  padding: 2vh;
+  border-radius: 2vh;
+  width: 40vw;
+  max-width: 90%;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  color: white;                            
+  /* color: black;                                          for light theme */
+  border: 1px solid rgba(255, 255, 255, 0.507);
+  /* some boderder for light mode */
+
+  box-shadow: 0 4px 30px #525252;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);              for light theme */
+  backdrop-filter: blur(5px);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.modal-header input[type="text"] {
+  width: 37vw;
+  margin-left: 1vw;
+  height: 5vh;
+  margin-top: 1vh;
+  border: 1px solid #E2E2E2;
+  border-radius: 1vh;
+  background-color: black;
+  /* background-color: white;                               for light mode */
+  color: white;
+  /* color: black;                                        for light mode */
+}
+
+.priority-options {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.priority-option {
+  flex: 1 1;
+  padding: 1vh;
+  border: 1px solid #ccc;
+  border-radius: 0.7vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5vh;
+  margin: 1vh;
+  margin-left: 2vh;
+  font-weight: 500;
+  color: #767575;
+}
+.Select-Priority{
+  font-family: "Inter", sans-serif;
+  margin-left: 1vw;
+  font-weight: 600;
+}
+
+.priority-option.selected {
+  background-color: #EEECEC;
+  color: #767575;
+}
+
+.modal-todo-container {
+  max-height: 21.6vh;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  overflow-x: hidden;
+}
+
+
+.modal-todo-container::-webkit-scrollbar {
+  width: 1.5vh;
+}
+
+.modal-todo-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.modal-todo-container::-webkit-scrollbar-thumb {
+  background-color: #9CB7C5;
+  border-radius: 10px;
+  height: 5vh;
+}
+
+
+
+
+
+
+.modal-todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vh;
+  padding: 1vh;
+  border: 1px solid #E2E2E2;
+  border-radius: 2vh;
+  /* background-color: #fff;                        for light theme */
+  background-color: black;
+  width: 36vw;
+  margin-top: 1vh;
+}
+
+.modal-todo-item input[type="checkbox"] {
+  margin-right: 10px;
+  background-color: transparent;
+}
+
+.modal-todo-item .modal-todo-text {
+  
+  flex-grow: 1;
+  padding: 5px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background: #0c0c0c;
+  /* background-color: white;                                for light mode */
+  color: white;
+  /* color: black;                                             for light mode */
+}
+
+
+.modal-todo-item .delete-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: red;
+}
+
+.modal-todo-item .delete-button:hover {
+  color: darkred;
+}
+
+.date-input input[type="date"] {
+    padding: 1vh;
+    border: 1px solid #ccc;
+    border-radius: 1.2vh;
+    cursor: pointer; 
+    margin-left: 0.5rem;
+    background-color: black;
+    /* background-color: white;                                      for light theme */
+    color: white;
+    /* color: black;                                   for light theme */
+}
+.date-input{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+.priority-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.high-priority-bullet {
+  background-color: red;
+}
+
+.moderate-priority-bullet {
+  background-color: blue;
+}
+
+.low-priority-bullet {
+  background-color: green;
+}
+
+/*  */
+
+

@@ -1,0 +1,37 @@
+.taskChart-toEnd{
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background: rgba(255, 255, 255, 0.2);    for light theme            */
+    background: black;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #525252;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);              for light theme */
+    backdrop-filter: blur(5px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    /* color: black;                            for light theme */
+}
+.toEnd-header{
+    display: flex;
+    justify-Content: center;
+    align-Items: center;
+    width: 95%;
+    position: relative;
+}
+.toEnd-select{
+   padding: 5px 10px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   /* background-color: #fff;               for light theme*/
+   background-color: black;
+   position: absolute;
+   right: 0px;
+   /* color: black;                   for light theme*/
+   color: white;
+}

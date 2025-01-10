@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 .Settings{
     height: 100vh;
     width: 85vw;
-    background-color: goldenrod;
+    /* background-color: white;                       for light theme */
+    background-color: black;
+    /* columns: black;                                   for light theme */
+    color: white;
 }
 .settings-input-container{
     width: 35%;
@@ -12,12 +18,18 @@
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+    margin-left: 2rem;
+    
 }
 .settings-input{
     width: 74%;
     height: 90%;
     border: none;
     outline: none;
+    /* background-color: white;                                for light theme */
+    background-color: #141414;
+    color: white;
+    /* color: black;                                            for light theme */
 }
 .settings-image-input1{
     width: 13%;
@@ -44,4 +56,35 @@
     width: 50%;
     height: 50%;
     cursor: pointer;
+}
+
+.settings-name h2{
+    margin-left: 2rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 5vh;
+    font-weight: 600;
+}
+
+.settings-update-btn{
+    /* background-color: #17A2B8;                           for light mode */
+    background-color: #007a06;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+    border: none;
+    height: 6vh;
+    width: 35%;
+    border-radius: 3vh;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2vh;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    
+}
+.settings-update-btn:hover {
+    /* background-color: rgb(13, 111, 126);                                   for light mode */
+    background-color: rgb(0 48 2);
 }
