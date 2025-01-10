@@ -80,7 +80,7 @@ function Landing() {
     );
     ap.fromTo(div1Ref.current,
       {
-        x: 1000
+        x: -1000
       },{
         x: 0,
         duration: 1,
