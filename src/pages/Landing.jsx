@@ -56,7 +56,7 @@ function Landing() {
         }, {
         x: 0,
         y: 0,
-        duration: 4,
+        duration: 1,
         ease: 'power1.out',
 
       }
