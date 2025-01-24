@@ -9,6 +9,7 @@ function StartImage() {
     const bookRef = useRef()
     const navigate = useNavigate()
 
+    // fetching data
     useEffect(()=> {
         gsap.fromTo(bookRef.current, 
             {
