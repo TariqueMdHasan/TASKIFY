@@ -13,10 +13,10 @@ function Board() {
         <Navbar />
       </div>
       <div className='board-lower'>
-        <BoardMain status="GENERAL"/>
-        <BoardMain status="FAMILY"/>
-        <BoardMain status="WORK"/>
-        <BoardMain status="PERSONAL"/>
+        <BoardMain status="BACKLOG"/>
+        <BoardMain status="TODO"/>
+        <BoardMain status="IN PROGRESS"/>
+        <BoardMain status="DONE"/>
       </div>
     </div>
   )
