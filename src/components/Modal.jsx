@@ -505,7 +505,7 @@ const Modal = ({ onClose, onSubmit, task }) => {
       })),
       toStart,
       toEnd,
-      status: status || 'General',
+      status: status || 'todo',
       priority: priority || 'High',
     };
 
@@ -574,10 +574,10 @@ const Modal = ({ onClose, onSubmit, task }) => {
               value={status}
               onChange={(e) => setStatus(e.target.value)}
             >
-              <option value="General">Backlog</option>
-              <option value="Family">Todo</option>
-              <option value="Work">In Progress</option>
-              <option value="Personal">Done</option>
+              <option value="backlog">Backlog</option>
+              <option value="todo">Todo</option>
+              <option value="inProgress">In Progress</option>
+              <option value="done">Done</option>
             </select>
           </div>
         </div>
