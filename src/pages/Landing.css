@@ -55,40 +55,70 @@
 .lp-blank2{
     height: 15%;
     width: 60%;
-    background-color: rgb(84, 84, 84);
+    /* background-color: rgb(84, 84, 84); */
     margin-left: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+    display: flex;
+    background-color: transparent;
+}
+.lp1{
+    height: 100%;
+    width: 4%;
+    /* background-color: rgb(84, 84, 84); */
+    transition: margin 0.2s ease;
+    /* border: 1px solid red; */
 }
 .lp-blank3{
     height: 15%;
     width: 90%;
-    background-color: rgb(84, 84, 84);
+    /* background-color: rgb(84, 84, 84); */
     margin-left: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+    display: flex;
+}
+.lp3{
+    height: 100%;
+    width: 4%;
+    /* border: 1px solid red; */
+    transition: margin 0.2s ease;
 }
 .lp-blank4{
     height: 15%;
     width: 30%;
-    background-color: rgb(84, 84, 84);
+    /* background-color: rgb(84, 84, 84); */
     margin-left: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+    display: flex;
+}
+.lp4{
+    height: 100%;
+    width: 6%;
+    /* border: 1px solid red; */
+    transition: margin 0.2s ease;
 }
 .lp-blank5{
     height: 15%;
     width: 50%;
-    background-color: rgb(84, 84, 84);
+    /* background-color: rgb(84, 84, 84); */
     margin-left: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+    display: flex;
 }
-.lp-blank5:hover, .lp-blank3:hover{
+.lp5{
+    height: 100%;
+    width: 4%;
+    /* border: 1px solid red; */
+    transition: margin 0.2s ease;
+}
+/* .lp-blank5:hover, .lp-blank3:hover{
     transform: scale(1.1);
     rotate: 20deg;
     z-index: 999;
@@ -97,7 +127,7 @@
     transform: scale(1.1);
     rotate: -20deg;
     z-index: 999;
-} 
+}  */
 .lp-three-dot1{
     height: 12px;
     width: 12px;
@@ -206,4 +236,59 @@
     font-size: 10px;
     position: absolute;
     bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.lp-blank2 > div,
+.lp-blank3 > div,
+.lp-blank4 > div,
+.lp-blank5 > div {
+  transition: margin 0.2s ease;
+  background-color: rgb(84, 84, 84);
+}
+
+.lp-blank2 > div:hover,
+.lp-blank3 > div:hover,
+.lp-blank4 > div:hover,
+.lp-blank5 > div:hover {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  transform: scale(1.2);
+}
+
+.lp-blank2 > div:hover + div,
+.lp-blank2 > div:hover ~ div:nth-child(n+2):nth-last-child(n+29),
+.lp-blank3 > div:hover + div,
+.lp-blank3 > div:hover ~ div:nth-child(n+2):nth-last-child(n+29),
+.lp-blank4 > div:hover + div,
+.lp-blank4 > div:hover ~ div:nth-child(n+2):nth-last-child(n+14),
+.lp-blank5 > div:hover + div,
+.lp-blank5 > div:hover ~ div:nth-child(n+2):nth-last-child(n+24) {
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 2px;
+  transform: scale(1.12);
+}
+
+.lp-blank2 > div:hover ~ div:nth-child(n+3):nth-last-child(n+28),
+.lp-blank2 > div:hover:nth-child(n+2) ~ div:nth-last-child(n+28),
+.lp-blank3 > div:hover ~ div:nth-child(n+3):nth-last-child(n+28),
+.lp-blank3 > div:hover:nth-child(n+2) ~ div:nth-last-child(n+28),
+.lp-blank4 > div:hover ~ div:nth-child(n+3):nth-last-child(n+13),
+.lp-blank4 > div:hover:nth-child(n+2) ~ div:nth-last-child(n+13),
+.lp-blank5 > div:hover ~ div:nth-child(n+3):nth-last-child(n+23),
+.lp-blank5 > div:hover:nth-child(n+2) ~ div:nth-last-child(n+23) {
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 1px;
+  transform: scale(1.05);
 }
