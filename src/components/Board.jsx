@@ -15,7 +15,7 @@ function Board() {
       <div className='board-lower'>
         <BoardMain status="BACKLOG"/>
         <BoardMain status="TODO"/>
-        <BoardMain status="IN PROGRESS"/>
+        <BoardMain status="INPROGRESS"/>
         <BoardMain status="DONE"/>
       </div>
     </div>

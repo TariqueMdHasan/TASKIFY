@@ -21,10 +21,10 @@
 }
 .Main-top-left{
   height: 6vh;
-  width: 4vw;
+  width: 7vw;
   
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 .Main-top-left>h3{

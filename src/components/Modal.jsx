@@ -467,27 +467,27 @@ const Modal = ({ onClose, onSubmit, task }) => {
   const [toEnd, setToEnd] = useState(task ? task.toEnd : '');
   const [status, setStatus] = useState(task ? task.status : '');
   const [loading, setLoading] = useState(false);
-  const isSaveCalled = useRef(false); // Track if handleSave has been called
+  const isSaveCalled = useRef(false); 
 
-  // Handle changes in todos
+ 
   const handleTodoChange = (index, field, value) => {
     const newTodos = [...todos];
     newTodos[index][field] = value;
     setTodos(newTodos);
   };
 
-  // Add a new todo
+
   const handleAddTodo = () => {
     setTodos([...todos, { text: '', completed: false }]);
   };
 
-  // Save or update task
+ 
   const handleSave = async (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
-    e.stopPropagation(); // Stop event bubbling
+    e.preventDefault(); 
+    e.stopPropagation(); 
 
-    if (isSaveCalled.current) return; // Prevent multiple calls
-    isSaveCalled.current = true; // Mark as called
+    if (isSaveCalled.current) return; 
+    isSaveCalled.current = true; 
 
     const token = localStorage.getItem('authToken');
     if (!token) {
@@ -495,7 +495,7 @@ const Modal = ({ onClose, onSubmit, task }) => {
       return;
     }
 
-    if (loading) return; // Prevent multiple API calls
+    if (loading) return; 
 
     const data = {
       title,
@@ -510,11 +510,11 @@ const Modal = ({ onClose, onSubmit, task }) => {
     };
 
     if (task) {
-      data._id = task._id; // Include the task ID for editing
+      data._id = task._id; 
     }
 
     try {
-      setLoading(true); // Disable the button and prevent multiple clicks
+      setLoading(true); 
       const response = await axios({
         method: task ? 'PUT' : 'POST',
         url: `https://taskmanager-yxx2.onrender.com/api/task${task ? `/${task._id}` : ''}`,
@@ -523,19 +523,19 @@ const Modal = ({ onClose, onSubmit, task }) => {
           Authorization: `Bearer ${token}`,
         },
       });
-      onSubmit(response.data); // Pass the response data to the parent component
+      onSubmit(response.data); 
       toast.success(task ? 'Task updated successfully' : 'Task saved successfully');
-      onClose(); // Close the modal
+      onClose(); 
     } catch (error) {
       console.error('Error saving task:', error.response ? error.response.data : error.message);
       toast.error(error.response ? error.response.data.message : 'Error saving task');
     } finally {
-      setLoading(false); // Re-enable the button
-      isSaveCalled.current = false; // Reset for future calls
+      setLoading(false); 
+      isSaveCalled.current = false; 
     }
   };
 
-  // Count completed todos
+ 
   const countCompletedTodos = () => todos.filter((todo) => todo.completed).length;
 
   return (
@@ -651,3 +651,25 @@ const Modal = ({ onClose, onSubmit, task }) => {
 };
 
 export default Modal;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
