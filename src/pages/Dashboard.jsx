@@ -1,9 +1,7 @@
-
-
 import React from 'react';
 import './Dashboard.css';
 import Sidebar from '../components/sidebar';
-import { Outlet } from 'react-router-dom'; // This will render the dynamic content
+import { Outlet } from 'react-router-dom'; 
 
 function Dashboard() {
   return (

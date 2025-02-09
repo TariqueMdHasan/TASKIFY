@@ -13,8 +13,8 @@ function Board() {
         <Navbar />
       </div>
       <div className='board-lower'>
-        <BoardMain status="BACKLOG"/>
         <BoardMain status="TODO"/>
+        <BoardMain status="BACKLOG"/>
         <BoardMain status="INPROGRESS"/>
         <BoardMain status="DONE"/>
       </div>
@@ -22,4 +22,14 @@ function Board() {
   )
 }
 
-export default Board
+export default Board;
+
+
+
+
+
+
+
+
+
+
