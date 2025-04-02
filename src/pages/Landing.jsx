@@ -15,9 +15,9 @@ function Landing() {
   const div3Ref = useRef(null)
   const div4Ref = useRef(null)
   const imageRef = useRef(null)
-  const circle1Ref = useRef(null)
-  const circle2Ref = useRef(null)
-  const circle3Ref = useRef(null)
+  // const circle1Ref = useRef(null)
+  // const circle2Ref = useRef(null)
+  // const circle3Ref = useRef(null)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -49,40 +49,40 @@ function Landing() {
           gsap.set(boxRef.current, { clearProps: 'rotate' }); // Clear inline rotate style
         },
       })
-      .fromTo(circle1Ref.current,
-        {
-          x: 1000,
-          y: 1000
-        }, {
-        x: 0,
-        y: 0,
-        duration: 1,
-        ease: 'power1.out',
+      // .fromTo(circle1Ref.current,
+      //   {
+      //     x: 1000,
+      //     y: 1000
+      //   }, {
+      //   x: 0,
+      //   y: 0,
+      //   duration: 1,
+      //   ease: 'power1.out',
 
-      }
-      ).fromTo(circle2Ref.current,
-        {
-          y: 1000,
-          x: 1000
-        }, {
-        x: 0,
-        y: 0,
-        duration: 0.5,
-        ease: "power1.out",
+      // }
+      // ).fromTo(circle2Ref.current,
+      //   {
+      //     y: 1000,
+      //     x: 1000
+      //   }, {
+      //   x: 0,
+      //   y: 0,
+      //   duration: 0.5,
+      //   ease: "power1.out",
 
-      }
-      ).fromTo(circle3Ref.current,
-        {
-          x: 1000,
-          y: -1000
-        }, {
-        x: 0,
-        y: 0,
-        duration: 0.5,
-        ease: "power1.out",
+      // }
+      // ).fromTo(circle3Ref.current,
+      //   {
+      //     x: 1000,
+      //     y: -1000
+      //   }, {
+      //   x: 0,
+      //   y: 0,
+      //   duration: 0.5,
+      //   ease: "power1.out",
 
-      }
-      )
+      // }
+      // )
       .fromTo(line1Ref.current,
         {
           width: "0%"
@@ -225,9 +225,13 @@ function Landing() {
       <div className="landing-con2">
         <div ref={boxRef} className='lp-left-container'>
           <div className="lp-blank1">
-            <div className="lp-three-dot1" ref={circle1Ref}></div>
+            {/* <div className="lp-three-dot1" ref={circle1Ref}></div>
             <div className="lp-three-dot2" ref={circle2Ref}></div>
-            <div className="lp-three-dot3" ref={circle3Ref}></div>
+            <div className="lp-three-dot3" ref={circle3Ref}></div> */}
+
+            <div className="lp-three-dot1" ></div>
+            <div className="lp-three-dot2" ></div>
+            <div className="lp-three-dot3" ></div>
           </div>
           <div ref={line1Ref} className="lp-blank2">
             <div className="lp-blacnk21 lp1"></div>
