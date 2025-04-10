@@ -222,12 +222,12 @@
 .ld-reg-btn:hover{
     background: rgb(0, 0, 113);
 }
-.pen{
+/* .pen{
     width: 6rem;
     position: relative;
     top: -14vh;
     left: 75%;
-}
+} */
 .developer{
     color: white;
     font-family: "Poppins", serif;

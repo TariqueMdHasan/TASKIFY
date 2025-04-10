@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Landing.css'
 import gsap from 'gsap'
-import Pen from '../assets/penL.png'
+// import Pen from '../assets/penL.png'
 
 function Landing() {
   const boxRef = useRef(null)
@@ -14,7 +14,7 @@ function Landing() {
   const div2Ref = useRef(null)
   const div3Ref = useRef(null)
   const div4Ref = useRef(null)
-  const imageRef = useRef(null)
+  // const imageRef = useRef(null)
   // const circle1Ref = useRef(null)
   // const circle2Ref = useRef(null)
   // const circle3Ref = useRef(null)
@@ -46,7 +46,7 @@ function Landing() {
         ease: 'power3.in',
         overwrite: "auto",
         onComplete: () => {
-          gsap.set(boxRef.current, { clearProps: 'rotate' }); // Clear inline rotate style
+          gsap.set(boxRef.current, { clearProps: 'rotate' }); 
         },
       })
       // .fromTo(circle1Ref.current,
@@ -190,12 +190,12 @@ function Landing() {
 
 
 
-    gsap.to(imageRef.current, {
-      rotation: 360,
-      repeat: -1,
-      duration: 2,
-      ease: "linear" 
-    });
+    // gsap.to(imageRef.current, {
+    //   rotation: 360,
+    //   repeat: -1,
+    //   duration: 2,
+    //   ease: "linear" 
+    // });
 
   }, [])
 
@@ -206,9 +206,11 @@ function Landing() {
         <div className="ld-left1" ref={div1Ref}>
           <h2>TASKIFY</h2>
         </div>
-        <div className="ld-left5">
+        {/* 
+          <div className="ld-left5">
           <img src={Pen} alt="pen" className='pen' ref={imageRef} />
         </div>
+        */}
         <div className="ld-left2" ref={div2Ref}>
           <h1><span className='ld-h1-w'>Manage work,</span> <br /> <span className='ld-h1-b'>Increase Productivity</span></h1>
         </div>
